@@ -128,5 +128,6 @@ function bz_taglines_filter($info, $show)
 				$taglineContent = get_post_meta($post->ID, 'bz_taglines_content', true);
 				if ($isItEnabled == 'yes') $info = $taglineContent;
 				}
+			}
 	return $info;
 }
