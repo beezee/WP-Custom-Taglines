@@ -56,6 +56,12 @@ function bz_taglines_add_custom_box() {
         'bz_taglines_inner_custom_box',
         'post' 
     );
+	add_meta_box( 
+        'bz_taglines_sectionid',
+        __( 'Custom Tagline', 'bz_taglines_textdomain' ),
+        'bz_taglines_inner_custom_box',
+        'page' 
+    );
 }
 
 /* Prints the box content */
