@@ -122,12 +122,11 @@ function bz_taglines_filter($info, $show)
 {
 	global $post;
 	if ($show == 'description') {
-		if (is_page() or is_post()) {
+		if (is_page() or is_post())
 				{
 				$isItEnabled = get_post_meta($post->ID, 'bz_taglines_enabled', true);
 				$taglineContent = get_post_meta($post->ID, 'bz_taglines_content', true);
 				if ($isItEnabled == 'yes') $info = $taglineContent;
 				}
-			}
 	return $info;
 }
